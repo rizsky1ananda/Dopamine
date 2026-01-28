@@ -97,7 +97,7 @@ jobs:
           set -x
           export BASEDIR="$(pwd)"
           export THEOS="${BASEDIR}/theos"
-          gmake -j$(sysctl -n hw.logicalcpu) NIGHTLY=1
+          gmake -j$(sysctl -n hw.logicalcpu) FINALPACKAGE=1
 
       - name: Upload Artifact
         id: dopamine-latest-upload
